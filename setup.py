@@ -159,6 +159,7 @@ instantClientRPMLib = None
 
 # try to determine the Oracle home
 userOracleHome = os.environ.get("ORACLE_HOME")
+print "ORACLE_HOME"+userOracleHome
 if userOracleHome is not None:
     if not CheckOracleHome(userOracleHome):
         messageFormat = "Oracle home (%s) does not refer to an " \
