@@ -67,6 +67,8 @@ def CheckOracleHome(directoryToCheck):
     import os
     import struct
     import sys
+    # debug this thing
+    print "sys.plataform: " + sys.platform
     if sys.platform in ("win32", "cygwin"):
         subDirs = ["bin"]
         filesToCheck = [
