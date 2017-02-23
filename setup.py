@@ -69,6 +69,7 @@ def CheckOracleHome(directoryToCheck):
     import sys
     # debug this thing
     print "sys.plataform: " + sys.platform
+    print "struct.calcsize:" + struct.calcsize("P")
     if sys.platform in ("win32", "cygwin"):
         subDirs = ["bin"]
         filesToCheck = [
