@@ -160,8 +160,9 @@ instantClientRPMLib = None
 # try to determine the Oracle home
 userOracleHome = os.environ.get("ORACLE_HOME")
 # JMRM Small test
-userOracleHome = '/app/vendor/oracle_instantclient/instantclient_11_2/bin'
-print "ORACLE_HOME"+userOracleHome
+#userOracleHome = '/app/vendor/oracle_instantclient/instantclient_11_2/bin'
+userOracleHome = "/app/.apt/usr/lib/oracle/11.1/client64"
+print "ORACLE_HOME is: "+userOracleHome
 if userOracleHome is not None:
     if not CheckOracleHome(userOracleHome):
         messageFormat = "Oracle home (%s) does not refer to an " \
